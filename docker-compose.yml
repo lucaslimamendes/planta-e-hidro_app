@@ -1,0 +1,27 @@
+version: '2.4'
+
+services:
+  app:
+    image: node:14-alpine
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/var/app
+    working_dir: /var/app
+    command: npm start
+
+  tests:
+    image: node:14-alpine
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/var/app
+    working_dir: /var/app
+    command: sh -c "npm install && npm run test"
+
+  deps:
+    image: node:14-alpine
+    volumes:
+      - .:/var/app
+    working_dir: /var/app
+    command: sh -c "npm install"
