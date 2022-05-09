@@ -1,0 +1,51 @@
+.content-Sensor{
+    display: flex;
+}
+
+.content-conteudo{
+    margin-left: 5%;
+    width: 100%;
+    display: grid;
+    align-content: center;
+    height: 100vh;
+}
+.content-conteudo h3{
+    text-align: center;
+}
+
+.sensor-temperatura, .sensor-luminosidade, .sensor-umidade{
+    background: white;
+    width: 80%;
+    border-radius: 20px;
+    margin: 15px;
+    align-content: space-around;
+    display: grid;
+    padding: 15px;
+}
+
+.status-temperatura, .status-luminosidade, .status-umidade{
+    display: flex;
+    align-items: center;
+}
+.status-luminosidade .status-sensor{
+    BACKGROUND: #FF0000;
+}
+.status-sensor{
+    BACKGROUND: #05FF00;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+.content-valores{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.content-valores p{
+    font-size: 25px;
+    margin: 10px
+}
+.content-valores h4{
+    margin: 10px
+}
