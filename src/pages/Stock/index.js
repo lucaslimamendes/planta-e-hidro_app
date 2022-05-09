@@ -9,9 +9,9 @@ const Stock = () => {
         <SideBar />
         <div class="container">
           <div class="bubble">
-            {/* <div class="imageDiv">
-              <img src="https://blog.belagro.com.br/content/uploads/2022/01/plantar-alface-750x422.jpg" alt="Girl in a jacket" width="125" height="125" class="image"> </img>
-            </div> */}
+            <div class="imageDiv">
+              {/* <img src="https://blog.belagro.com.br/content/uploads/2022/01/plantar-alface-750x422.jpg" alt="Girl in a jacket" width="125" height="125" class="image"> </img> */}
+            </div>
             <div class="plant">
               <h3><p>Planta: Alface</p></h3>
             </div>
@@ -29,9 +29,9 @@ const Stock = () => {
   
         <div class="container2">
           <div class="bubble">
-            {/* <div class="imageDiv">
-            <img src="https://media.istockphoto.com/photos/selective-focus-on-ripe-red-tomatoes-on-the-branches-in-the-growing-picture-id1256312003?k=20&m=1256312003&s=612x612&w=0&h=uEjpVhfHvHXE8729jn4Oj0l-8Sa3HmTVbPVYdADqc1M=" alt="Girl in a jacket" width="125" height="125" class="image"> </img> 
-            </div> */}
+            <div class="imageDiv">
+            {/* <img src="https://media.istockphoto.com/photos/selective-focus-on-ripe-red-tomatoes-on-the-branches-in-the-growing-picture-id1256312003?k=20&m=1256312003&s=612x612&w=0&h=uEjpVhfHvHXE8729jn4Oj0l-8Sa3HmTVbPVYdADqc1M=" alt="Girl in a jacket" width="125" height="125" class="image"> </img>  */}
+            </div>
             <div class="plant">
               <h3><p>Planta: Tomate</p></h3>
             </div>
@@ -49,9 +49,9 @@ const Stock = () => {
   
         <div class="container3">
           <div class="bubble">
-            {/* <div class="imageDiv">
-              <img src="https://revistacampoenegocios.com.br/wp-content/uploads/2019/07/Cr%C3%A9ditos-Shutterstock-3-1024x682.jpeg" alt="Girl in a jacket" width="125" height="125" class="image"> </img>
-            </div> */}
+            <div class="imageDiv">
+              {/* <img src="https://revistacampoenegocios.com.br/wp-content/uploads/2019/07/Cr%C3%A9ditos-Shutterstock-3-1024x682.jpeg" alt="Girl in a jacket" width="125" height="125" class="image"> </img> */}
+            </div>
             <div class="plant">
               <h3><p>Planta: Pepino</p></h3>
             </div>

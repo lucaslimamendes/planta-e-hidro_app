@@ -9,9 +9,9 @@ const Consultancy = () => {
         <SideBar />
       <div class="container">
         <div class="bubble">
-          {/* <div class="imageDiv">
-            <img src='../public/consultor.jpeg' alt="Girl in a jacket" width="125" height="125" class="image"> </img>
-          </div> */}
+          <div class="imageDiv">
+            {/* <img src='../public/consultor.jpeg' alt="Girl in a jacket" width="125" height="125" class="image"> </img> */}
+          </div>
           <div class="name">
             <h3><p>Nome: Hortêncio Figo</p></h3>
           </div>

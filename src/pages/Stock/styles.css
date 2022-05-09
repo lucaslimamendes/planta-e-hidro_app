@@ -1,85 +1,98 @@
 .container {
-    height: 160px;
-    width: 800px;
-    background-color: black;
-    position: relative;
-    bottom: 50%;
-    left: 50%;
-    transform: translate(-50%, -600%);
-  }
+  height: 160px;
+  width: 800px;
+  background-color: black;
+  position: relative;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -600%);
+}
   
   
-  .bubble {
-    height: calc(100% - 4px);
-    width: calc(100% - 4px);  
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    line-height: 100px;
-    text-align: center;
-    background-color: white;
-    
-  }
+.bubble {
+  height: calc(100% - 4px);
+  width: calc(100% - 4px);  
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  line-height: 100px;
+  text-align: center;
+  background-color: white;
   
-  .image {
-    position: relative;
-    right: 320px;
-    top: 15px;
-  }
+}
   
-  .plant {
-      position: relative;
-      right: 180px;
-      bottom: 30px
-  }
+.image {
+  position: relative;
+  right: 320px;
+  top: 15px;
+}
   
-  .quantity {
-      position: relative;
-      right: 167px;
-      bottom: 60px
-  }
-  
-  .dayHarvested {
-      position: relative;
-      left: 193px;
-      bottom: 268px
-  }
-  
-  .expirationDate {
-      position: relative;
-      left: 208px;
-      bottom: 300px
-  }
-  
-  .container2 {
-    height: 160px;
-    width: 800px;
-    background-color: black;
-    top: 200px;
-    position: relative;
-    top: 200px;
-    position: relative;
-    bottom: 50%;
-    left: 50%;
-    transform: translate(-50%, -700%);
-  }
-  
-  .container3 {
-    height: 160px;
-    width: 800px;
-    background-color: black;
-    position: relative;
-    top: 243px;
-    position: relative;
-    bottom: 50%;
-    left: 50%;
-    transform: translate(-50%, -700%);
-  }
-  
-  body{
-    background: #93FFD8; 
-    margin: 0;
-    font-family: arial, sans-serif;
-  }
+.plant {
+  position: relative;
+  right: 180px;
+  bottom: 162px
+}
+
+.quantity {
+  position: relative;
+  right: 167px;
+  bottom: 190px
+}
+
+.dayHarvested {
+  position: relative;
+  left: 193px;
+  bottom: 400px
+}
+
+.expirationDate {
+  position: relative;
+  left: 208px;
+  bottom: 428px
+}
+
+.container2 {
+  height: 160px;
+  width: 800px;
+  background-color: black;
+  top: 200px;
+  position: relative;
+  top: 200px;
+  position: relative;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -700%);
+}
+
+.container3 {
+  height: 160px;
+  width: 800px;
+  background-color: black;
+  position: relative;
+  top: 243px;
+  position: relative;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -700%);
+}
+
+body{
+  background: #93FFD8; 
+  margin: 0;
+  font-family: arial, sans-serif;
+}
+
+.imageDiv {
+  position: relative;
+  left: 18px;
+  top: 15px;
+  border: 3px solid #000000;
+  width: 125px;
+  height: 125px;
+  background-color: rgb(163, 149, 149);
+
+}
+
+
   
   
