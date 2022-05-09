@@ -9,6 +9,13 @@ services:
       - .:/var/app
     working_dir: /var/app
     command: npm start
+  
+  build:
+    image: node:14-alpine
+    volumes:
+      - .:/var/app
+    working_dir: /var/app
+    command: npm run build
 
   tests:
     image: node:14-alpine
