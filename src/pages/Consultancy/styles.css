@@ -1,0 +1,103 @@
+.container {
+    height: 160px;
+    width: 800px;
+    background-color: black;
+    position: relative;
+}
+  
+.bubble {
+  height: calc(100% - 4px);
+  width: calc(100% - 4px);  
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  line-height: 100px;
+  text-align: center;
+  background-color: white;
+}
+
+.image {
+  position: relative;
+  right: 300px;
+  top: 15px;
+  border-radius: 50%;
+  border: 3px solid #000000;
+}
+
+.name {
+    position: relative;
+    right: 90px;
+    bottom: 160px
+}
+
+.specialty {
+    position: relative;
+    left: 190px;
+    bottom: 397px
+}
+
+.formation {
+    position: relative;
+    right: 75px;
+    bottom: 190px
+}
+
+
+.chat-popup {
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #000000;
+  z-index: 9;
+}
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+.form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+
+.form-container textarea {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+}
+
+body{
+    background: #93FFD8; 
+    margin: 0;
+    font-family: arial, sans-serif;
+}
+
+.imageDiv {
+  position: relative;
+  left: 18px;
+  top: 15px;
+  border: 3px solid #000000;
+  width: 125px;
+  height: 125px;
+  background-color: rgb(163, 149, 149);
+  border-radius: 50%;
+
+}
+    

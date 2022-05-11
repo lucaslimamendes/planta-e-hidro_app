@@ -1,0 +1,99 @@
+.content-container {
+    height: 160px;
+    width: 800px;
+    background-color: black;
+    border-radius: 12px;
+    position: relative;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -600%);
+}
+  
+  
+.content-bubble {
+    height: calc(100% - 4px);
+    width: calc(100% - 4px);  
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    line-height: 100px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+  
+.content-image {
+    position: relative;
+    right: 320px;
+    top: 15px;
+    border: 3px solid #000000;
+}
+
+.content-imageDiv {
+    position: relative;
+    left: 18px;
+    top: 15px;
+    border: 3px solid #000000;
+    width: 125px;
+    height: 125px;
+    background-color: rgb(163, 149, 149);
+
+}
+  
+.content-plant {
+    position: absolute;
+    right: 500px;
+    bottom: 50px
+}
+  
+.content-plantedQuantity {
+    position: absolute;
+    right: 397px;
+    top: 50px
+}
+  
+.content-dayPlanted {
+    position: absolute;
+    left: 500px;
+    bottom: 50px
+}
+  
+.content-estimatedHarvestDay {
+    position: absolute;
+    left: 450px;
+    top: 50px
+}
+  
+.content-container2 {
+    height: 160px;
+    width: 800px;
+    background-color: black;
+    border-radius: 12px;
+    position: relative;
+    top: 200px;
+    position: relative;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -700%);
+}
+  
+.content-container3 {
+    height: 160px;
+    width: 800px;
+    background-color: black;
+    border-radius: 12px;
+    top: 243px;
+    position: relative;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -700%);
+}
+  
+body{
+    background: #93FFD8; 
+    margin: 0;
+    font-family: arial, sans-serif;
+}
+  
+  

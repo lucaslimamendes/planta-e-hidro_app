@@ -1,6 +1,6 @@
 import './styles.css'
 import Icon from '@mdi/react'
-import { mdiBriefcase, mdiChartBar, mdiComment, mdiCommentOutline, mdiDotsVertical, mdiExitToApp, mdiLightningBolt, mdiSprout, mdiViewDashboard } from '@mdi/js'
+import { mdiAccount, mdiBriefcase, mdiBriefcaseOutline, mdiChartBar, mdiComment, mdiCommentOutline, mdiDotsVertical, mdiExitToApp, mdiLightningBolt, mdiLightningBoltOutline, mdiSprout, mdiViewDashboard } from '@mdi/js'
 
 const SideBar = () => {
     return (
