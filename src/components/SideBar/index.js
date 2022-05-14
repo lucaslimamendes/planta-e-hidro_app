@@ -1,3 +1,4 @@
+import React from 'react';
 import './styles.css'
 import Icon from '@mdi/react'
 import { mdiBriefcase, mdiChartBar, mdiComment, mdiCommentOutline, mdiDotsVertical, mdiExitToApp, mdiLightningBolt, mdiSprout, mdiViewDashboard } from '@mdi/js'

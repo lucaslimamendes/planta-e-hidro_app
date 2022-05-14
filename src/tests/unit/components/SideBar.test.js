@@ -1,7 +1,8 @@
+import React from 'react';
 import renderer from 'react-test-renderer';
 import SideBar from '../../../components/SideBar';
 
-it('Home page snapshot', () => {
+it('Sidebar component snapshot', () => {
   const component = renderer.create(
     <SideBar />,
   );
