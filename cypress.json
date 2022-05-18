@@ -1,0 +1,9 @@
+{
+  "defaultCommandTimeout": 5000,
+  "baseUrl": "http://localhost:3000",
+  "screenshotsFolder": "./src/tests/integration/screenshots",
+  "integrationFolder": "./src/tests/integration",
+  "pluginsFile": "./src/tests/integration/plugins/index.js",
+  "supportFile": "./src/tests/integration/support",
+  "video": false
+}
