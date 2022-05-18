@@ -34,6 +34,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 25vh;
 }
 .content-pages .content-plantacao{
     background: white;
@@ -42,6 +43,7 @@ a{
     margin: 5%;
     border-radius: 20px;
     box-shadow: 4px 4px #a3a3a3;
+    height: 25vh;
 }
 
 .content-pages .content-plantacao table {

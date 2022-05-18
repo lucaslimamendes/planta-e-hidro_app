@@ -21,6 +21,7 @@
     align-content: space-around;
     display: grid;
     padding: 15px;
+    box-shadow: 4px 4px #a3a3a3;
 }
 
 .status-temperatura, .status-luminosidade, .status-umidade{

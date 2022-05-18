@@ -29,7 +29,7 @@ const SideBar = () => {
 
                 <div className="content-buttons">
                     <div className="Home">
-                        <a href="javascript:void(0)"> <Icon path={mdiViewDashboard} /> Home</a>
+                        <a href="/"> <Icon path={mdiViewDashboard} /> Home</a>
                     </div>
 
                     <div className="Plantacao">
@@ -41,7 +41,7 @@ const SideBar = () => {
                     </div>
 
                     <div className="Sensor">
-                        <a href="javascript:void(0)"><Icon path={mdiLightningBolt} /> Sensores</a>
+                        <a href="/sensor"><Icon path={mdiLightningBolt} /> Sensores</a>
                     </div>
 
                     <div className="Consultoria">
