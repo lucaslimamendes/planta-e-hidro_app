@@ -34,11 +34,11 @@ const SideBar = () => {
                     </div>
 
                     <div className="Plantacao">
-                        <a href="javascript:void(0)"> <Icon path={mdiSprout} /> Plantação</a>
+                        <a href="/plantation"> <Icon path={mdiSprout} /> Plantação</a>
                     </div>
 
                     <div className="Estoque">
-                        <a href="javascript:void(0)"> <Icon path={mdiChartBar} /> Estoque</a>
+                        <a href="/stock"> <Icon path={mdiChartBar} /> Estoque</a>
                     </div>
 
                     <div className="Sensor">
@@ -46,7 +46,7 @@ const SideBar = () => {
                     </div>
 
                     <div className="Consultoria">
-                        <a href="javascript:void(0)"> <Icon path={mdiBriefcase} /> Consultoria</a>
+                        <a href="/consultancy"> <Icon path={mdiBriefcase} /> Consultoria</a>
                     </div>
                 </div>
 

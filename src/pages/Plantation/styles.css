@@ -1,0 +1,34 @@
+.content-Sensor{
+    display: flex;
+}
+
+.content-conteudo .content-imagem img {
+    width: 50px;
+}
+.content-conteudo{
+    margin-left: 5%;
+    width: 100%;
+    display: grid;
+    align-content: center;
+    height: 100vh;
+}
+
+.content-plantacao{
+    background: white;
+    width: 80%;
+    border-radius: 20px;
+    margin: 15px;
+    align-content: space-around;
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+    box-shadow: 4px 4px #a3a3a3;
+}
+
+.content-plantacao .content-imagem{
+    display: flex;
+    align-items: center;
+}
+.nome-planta, .qtd-planta, .dia-plantado, .previsao-colheita{
+    margin: 20px 0;
+}

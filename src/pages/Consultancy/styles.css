@@ -1,0 +1,25 @@
+.content-Sensor{
+    display: flex;
+}
+
+.content-conteudo{
+    margin-left: 5%;
+    width: 100%;
+    display: grid;
+    align-content: center;
+    height: 100vh;
+}
+.content-conteudo h3{
+    text-align: center;
+}
+
+.sensor-temperatura, .sensor-luminosidade, .sensor-umidade{
+    background: white;
+    width: 80%;
+    border-radius: 20px;
+    margin: 15px;
+    align-content: space-around;
+    display: grid;
+    padding: 5px;
+    box-shadow: 4px 4px #a3a3a3;
+}

@@ -1,0 +1,33 @@
+.content-Sensor{
+    display: flex;
+}
+
+.content-conteudo .content-imagem img {
+    width: 50px;
+}
+.content-conteudo{
+    margin-left: 5%;
+    width: 100%;
+    display: grid;
+    align-content: center;
+    height: 100vh;
+}
+
+.content-estoque{
+    background: white;
+    width: 80%;
+    margin: 15px;
+    align-content: space-around;
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+    box-shadow: 4px 4px #a3a3a3;
+}
+
+.content-estoque .content-imagem{
+    display: flex;
+    align-items: center;
+}
+.nome-item, .qtd-item, .dia-entrada, .previsao-vencimento{
+    margin: 20px 0;
+}
