@@ -5,7 +5,7 @@ import SideBar from '../../components/SideBar'
 const Plantation = () => {
 
     return (
-        <div className="content-Sensor">
+        <div className="content-Plantation">
             <SideBar />
             <div className="content-conteudo">
                 <h2>Plantação</h2>

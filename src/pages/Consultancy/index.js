@@ -2,43 +2,51 @@ import '../Consultancy/styles.css'
 import React from 'react'
 import SideBar from '../../components/SideBar'
 
-const Stock = () => {
+const Consultancy = () => {
 
     return (
-        <div className="content-Sensor">
+        <div className="content-Consultancy">
             <SideBar />
             <div className="content-conteudo">
                 <h2>Consultores</h2>
-                <div className="sensor-temperatura">
-                    <div className="content-temperatura">
-                        <h3>Temperatura</h3>
-                        <div className="status-temperatura">
-                            <div className="status-sensor"></div>
-                            <p>ONLINE</p>
+                <div className="content-consultores">
+                    <div className="content-imagem">
+                        <img src="logo512.png"></img>
+                    </div>
+                    <div className="content-plantas">
+                        <div className="nome-consultor"><p>Nome:</p></div>
+                        <div className="formacao"><p>Formação:</p></div>
+                    </div>
+                    <div className="content-datas">
+                        <div className="especializacao"><p>Especialização:</p></div>
+                        <div className="dias-disponiveis"><p>Dias disponiveis:</p></div>
+                    </div>          
+                </div> 
+                <div className="box-mensage">
+                    <div className="content-mensage">
+                        <div className="navbar-box">
+                            <div className="consultor">Heitor</div>
+                            <div className="buttons">
+                                <div className="minimizar">-</div>
+                                <div className="fechar">X</div>
+                            </div>
                         </div>
-                        <div className="content-valores">
-                            <div className="valor-min">
-                                <p>20ºC</p>
-                                <h4>Valor MIN</h4>                                
-                            </div>
-                            <div className="valor-atual">
-                                <p>24ºC</p>
-                                <h4>Valor ATUAL</h4>                                
-                            </div>
-                            <div className="valor-max">
-                                <p>26ºC</p>
-                                <h4>Valor MAX</h4>       
-                            </div>
+
+                        <div className="menssagem-consultor">
+                            <img src="logo512.png"></img>
+                            <p>Lorem ipsun</p>
+                        </div>
+
+                        <div className="menssagem-solicitante">
+                            <p>Lorem ipsun</p>
+                            <img src="logo512.png"></img>                        
                         </div>
                     </div>
-                </div>                            
-
+                </div>
+                
             </div>
-
         </div>
-
-
     );
 };
 
-export default Stock;
+export default Consultancy;

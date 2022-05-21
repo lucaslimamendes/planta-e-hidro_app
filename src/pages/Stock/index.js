@@ -5,7 +5,7 @@ import SideBar from '../../components/SideBar'
 const Stock = () => {
 
     return (
-        <div className="content-Sensor">
+        <div className="content-Stock">
             <SideBar />
             <div className="content-conteudo">
                 <h2>Estoque</h2>

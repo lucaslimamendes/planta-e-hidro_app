@@ -9,6 +9,8 @@ import Stock from './pages/Stock';
 import Sensor from './pages/Sensor';
 import Consultancy from './pages/Consultancy';
 import About from './pages/About';
+import Login from './pages/Login';
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -19,6 +21,7 @@ const App = () => {
         <Route path="/sensor" element={<Sensor />} />        
         <Route path="/consultancy" element={<Consultancy />} />
         <Route path="/about" element={<About />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   );
