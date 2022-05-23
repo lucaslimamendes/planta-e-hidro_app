@@ -1,0 +1,66 @@
+.content-Consultancy{
+    display: flex;
+}
+
+.content-conteudo .content-imagem img {
+    width: 50px;
+}
+.content-conteudo{
+    margin-left: 5%;
+    width: 100%;
+    display: grid;
+    align-content: center;
+    height: 100vh;
+}
+
+.content-consultores{
+    background: white;
+    width: 80%;
+    border-radius: 20px;
+    margin: 15px;
+    align-content: space-around;
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+    box-shadow: 4px 4px #a3a3a3;
+}
+
+.content-consultores .content-imagem{
+    display: flex;
+    align-items: center;
+}
+.nome-consultor, .formacao, .especializacao, .dias-disponiveis{
+    margin: 20px 0;
+}
+
+.box-mensage{
+    background-color: white;
+    display: flex;
+    justify-self: end;
+    width: 13vw;
+    justify-content: center;
+}
+.box-mensage .consultor{
+    margin: 10px 20px 10px 0;
+}
+.box-mensage .content-mensage img{
+    width: 25px;
+}
+.menssagem-consultor, .menssagem-solicitante{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-box{
+    display: flex;
+    align-items: center;
+}
+.navbar-box .buttons{
+    display: flex;
+}
+.navbar-box .buttons .minimizar, .fechar{
+    border: 1px solid black;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+}

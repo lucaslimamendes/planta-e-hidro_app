@@ -1,0 +1,33 @@
+.content-Login{
+    background: #efefef;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-conteudoLogin{
+    width: 75%;
+    display: grid;
+    align-content: center;
+    height: 100vh;
+    justify-content: center;
+}
+.content-user{
+    text-align: center;
+    background-color: #10566d;
+    border-radius: 50px;
+    padding: 50px;
+}
+.content-user div{
+    margin: 15px;
+    color: white;
+}
+.content-user p{
+    margin: 0;
+}
+
+.content-user a {
+    cursor: pointer;
+}
