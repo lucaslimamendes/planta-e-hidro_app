@@ -4,10 +4,10 @@ describe('Test sensor page', () => {
         cy.get('.SideBar').should('be.visible');
     });
 
-    it('home page see cards cta', () => {
+    it('sensor page go to login if disconnect', () => {
         cy.visit('/sensor');
-        cy.contains('Temperatura');
-        cy.contains('Luminosidade');
-        cy.contains('Umidade');
+        cy.contains('Acessar');
+        cy.contains('Senha');
+        cy.contains('Login');
     });
 });
