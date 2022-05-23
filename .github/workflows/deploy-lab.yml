@@ -28,7 +28,7 @@ jobs:
         npm install
         npm run build --if-present
         npm run test-unit --if-present
-        npm run mock & npm run test-integration
+        # npm run mock & npm run test-integration
       
     - name: 'Deploy to Azure WebApp'
       uses: azure/webapps-deploy@v2
