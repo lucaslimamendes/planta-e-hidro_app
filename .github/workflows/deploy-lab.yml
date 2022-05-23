@@ -6,7 +6,7 @@ on:
 
 env:
   AZURE_WEBAPP_NAME: planta-e-hidro-app-lab
-  AZURE_WEBAPP_PACKAGE_PATH: '.'
+  AZURE_WEBAPP_PACKAGE_PATH: './build'
   NODE_VERSION: '14.x'
 
 jobs:
