@@ -5,7 +5,7 @@
   "scripts": {
     "start": "react-scripts start",
     "start-ci": "cross-env BROWSER=none react-scripts start",
-    "build": "CI=false && react-scripts build",
+    "build": "cross-env CI=false && react-scripts build",
     "test": "react-scripts test --watchAll=false",
     "test-unit": "jest",
     "test-snapshot": "jest --updateSnapshot",
@@ -14,6 +14,7 @@
     "test-integration": "start-server-and-test start-ci http://localhost:3000 ci",
     "eject": "react-scripts eject"
   },
+  "proxy": "http://localhost:5000",
   "jest": {
     "testMatch": [
       "**/tests/unit/**/**.test.js"
