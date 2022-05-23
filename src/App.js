@@ -9,6 +9,7 @@ const App = () => {
   const [ plantations, setPlantations ] = useState([]);
 	
 	const dispatchEvent = (actionType, payload) => {
+    console.log('dispatchEvent payload', payload);
 		switch (actionType) {
 			case 'SET_LOGGED':
 				setLogged(payload.logged);
@@ -26,7 +27,7 @@ const App = () => {
 
   const verifySession = async () => {
     const resp = await APIAuth.get('/v2/user');
-
+    console.log('verifySession resp', resp);
     if (resp.status === 200) {
       await getPlantations();
       dispatchEvent('SET_LOGGED', { logged: true });
@@ -40,6 +41,7 @@ const App = () => {
         if(resp.status == 200){
           setPlantations(await resp.data);
         }
+        console.log('getPlantations resp', resp);
     } catch (error) {
         console.log('error.message', error.message);
     }
