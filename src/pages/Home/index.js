@@ -1,8 +1,10 @@
 import '../Home/styles.css'
-import React from 'react'
-import SideBar from '../../components/SideBar'
+import React, { useContext } from 'react';
+import SideBar from '../../components/SideBar';
+import { AppContext } from '../../context';
 
 const Home = () => {
+    const { plantations } = useContext(AppContext);
 
     return (
         <div className="content-home">
@@ -17,18 +19,15 @@ const Home = () => {
                         <tr>
                                 <th>Nome</th>
                                 <th>Quantidade</th>
-                                <th>Tempo de cultivo</th>
+                                <th>Endereço</th>
                             </tr>
-                            <tr>
-                                <td>Alface</td>
-                                <td>10</td>
-                                <td>10 dias</td>
-                            </tr>
-                            <tr>
-                                <td>Rucula</td>
-                                <td>8</td>
-                                <td>5 dias</td>
-                            </tr>
+                            { plantations && plantations[0] && (
+                                <tr>
+                                    <td>{ plantations[0].name }</td>
+                                    <td>{ plantations[0].channelQty }</td>
+                                    <td>{ plantations[0].address }</td>
+                                </tr>
+                            ) }
                        </table>
 
                     </div>
@@ -43,12 +42,8 @@ const Home = () => {
                         <p><img src="Ellipse-15.png"></img> Brl</p>
                     </div>
                 </div>
-
-            </div>         
-            
+            </div>
         </div>
-
-
     );
 };
 

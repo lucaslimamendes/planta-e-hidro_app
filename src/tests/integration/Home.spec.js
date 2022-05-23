@@ -4,10 +4,10 @@ describe('Test home page', () => {
         cy.get('.SideBar').should('be.visible');
     });
 
-    it('home page see cards cta', () => {
+    it('home page go to login if disconnect', () => {
         cy.visit('');
-        cy.contains('Noticia');
-        cy.contains('Clima');
-        cy.contains('Quantidade');
+        cy.contains('Acessar');
+        cy.contains('Senha');
+        cy.contains('Login');
     });
 });

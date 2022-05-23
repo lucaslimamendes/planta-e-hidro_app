@@ -1,29 +1,58 @@
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
-import Home from './pages/Home';
-import Plantation from './pages/Plantation';
-import Stock from './pages/Stock';
-import Sensor from './pages/Sensor';
-import Consultancy from './pages/Consultancy';
-import About from './pages/About';
-import Login from './pages/Login';
+import { useState, useEffect } from 'react';
+import { AppContext } from './context';
+import Routes from './Routes';
+import { APIAuth } from './utils/http-common';
 
 const App = () => {
+  const [ logged, setLogged ] = useState(false);
+  const [ user, setUser ] = useState({});
+  const [ plantations, setPlantations ] = useState([]);
+	
+	const dispatchEvent = (actionType, payload) => {
+		switch (actionType) {
+			case 'SET_LOGGED':
+				setLogged(payload.logged);
+				return;
+      case 'SET_USER':
+        setUser(payload.user);
+        return;
+      case 'SET_PLANTATIONS':
+        setUser(payload.plantations);
+        return;
+			default:
+				return;
+		}
+	};
+
+  const verifySession = async () => {
+    const resp = await APIAuth.get('/v2/user');
+
+    if (resp.status === 200) {
+      await getPlantations();
+      dispatchEvent('SET_LOGGED', { logged: true });
+      dispatchEvent('SET_USER', { user: await resp.data });
+    }
+  };
+
+  const getPlantations = async () => {
+    try {
+        const resp = await APIAuth.get('/v1/greenhouses');
+        if(resp.status == 200){
+          setPlantations(await resp.data);
+        }
+    } catch (error) {
+        console.log('error.message', error.message);
+    }
+  };
+
+  useEffect(() => {
+    verifySession();
+  }, []);
+
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/plantation" element={<Plantation />} />
-        <Route path="/stock" element={<Stock />} />    
-        <Route path="/sensor" element={<Sensor />} />        
-        <Route path="/consultancy" element={<Consultancy />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/login" element={<Login />} />
-      </Routes>
-    </BrowserRouter>
+    <AppContext.Provider value={{ logged, plantations, user, dispatchEvent }}>
+      <Routes />
+    </AppContext.Provider>
   );
 }
 

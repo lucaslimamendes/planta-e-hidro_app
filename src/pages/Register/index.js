@@ -1,35 +1,35 @@
-import '../Login/styles.css';
-import React, { useState, useContext } from 'react';
+import '../Register/styles.css';
+import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
-import { AppContext } from '../../context';
 import SideBar from '../../components/SideBar';
 import { API } from "../../utils/http-common";
 
 const Login = () => {
     const navigate = useNavigate();
-    const { dispatchEvent } = useContext(AppContext);
 
+    const [name, setName] = useState('');
     const [email, setEmail] = useState('');
+    const [phone, setPhone] = useState('');
     const [pass, setPass] = useState('');
     const [error, setError] = useState();
 
-    const loginHandle = async () => {
+    const registerHandle = async () => {
         setError();
         try {
-            const resp = await API.post('/login', {
+            const resp = await API.post('/v1/users/', {
+                name: name,
+                phone: phone,
                 email: email,
                 password: pass,
             });
-            if(resp.status != 200){
+            if(resp.status != 201){
                 setError(resp.data.error);
                 return;
             }
-            await dispatchEvent('SET_LOGGED', { logged: true });
-            await dispatchEvent('SET_USER', { user: await resp.data });
-            localStorage.setItem('token', await resp.data.token);
-            navigate('/');
+            alert('Usuário criado com sucesso!');
+            navigate('/login');
         } catch (error) {
-            setError('Não foi possivel fazer login, tente novamente!');
+            setError('Não foi possivel se cadastrar, tente novamente!');
             console.log('error.message', error.message);
         }
     }
@@ -40,6 +40,14 @@ const Login = () => {
             <div className="content-conteudoLogin">
                 <div className="content-user">
                     { error && <p>{error}</p> }
+                    <div className="name">
+                        <p>Nome</p>
+                        <input value={name} onInput={e => setName(e.target.value)}/>
+                    </div>
+                    <div className="phone">
+                        <p>Celular</p>
+                        <input value={phone} onInput={e => setPhone(e.target.value)}/>
+                    </div>
                     <div className="usuario">
                         <p>E-mail</p>
                         <input value={email} onInput={e => setEmail(e.target.value)}/>
@@ -48,11 +56,8 @@ const Login = () => {
                         <p>Senha</p>
                         <input value={pass} onInput={e => setPass(e.target.value)} type="password"/>
                     </div>
-                    <div className="acesso">
-                        <a onClick={() => loginHandle()}>Acessar</a>
-                    </div>
                     <div className="register">
-                        <a onClick={() => navigate('/register')} >Cadastrar-se</a>
+                        <a onClick={() => registerHandle()}>Cadastrar</a>
                     </div>
                 </div>
             </div>

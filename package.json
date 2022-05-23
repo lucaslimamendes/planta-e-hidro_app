@@ -10,6 +10,7 @@
     "test-unit": "jest",
     "test-snapshot": "jest --updateSnapshot",
     "ci": "cypress run",
+    "mock": "node mock/server",
     "test-integration": "start-server-and-test start-ci http://localhost:3000 ci",
     "eject": "react-scripts eject"
   },
@@ -42,6 +43,7 @@
   "dependencies": {
     "@mdi/js": "^6.6.96",
     "@mdi/react": "^1.6.0",
+    "axios": "^0.27.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.3.0",
@@ -50,6 +52,7 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.18.0",
     "@babel/preset-env": "^7.17.10",
     "@babel/preset-react": "^7.16.7",
     "@testing-library/jest-dom": "^5.16.4",
