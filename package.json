@@ -14,6 +14,7 @@
     "test-integration": "start-server-and-test start-ci http://localhost:3000 ci",
     "eject": "react-scripts eject"
   },
+  "homepage": ".",
   "proxy": "http://localhost:5000",
   "jest": {
     "testMatch": [
