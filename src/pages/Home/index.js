@@ -1,4 +1,4 @@
-import './styles.css'
+import '../Home/styles.css'
 import React from 'react'
 import SideBar from '../../components/SideBar'
 

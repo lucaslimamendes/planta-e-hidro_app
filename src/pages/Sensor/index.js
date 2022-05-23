@@ -1,4 +1,4 @@
-import './styles.css'
+import '../Sensor/styles.css'
 import React from 'react'
 import SideBar from '../../components/SideBar'
 
@@ -8,6 +8,7 @@ const Sensor = () => {
         <div className="content-Sensor">
             <SideBar />
             <div className="content-conteudo">
+                <h2>Sensores</h2>
                 <div className="sensor-temperatura">
                     <div className="content-temperatura">
                         <h3>Temperatura</h3>

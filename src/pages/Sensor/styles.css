@@ -11,6 +11,7 @@
 }
 .content-conteudo h3{
     text-align: center;
+    margin: 5px;
 }
 
 .sensor-temperatura, .sensor-luminosidade, .sensor-umidade{
@@ -20,7 +21,8 @@
     margin: 15px;
     align-content: space-around;
     display: grid;
-    padding: 15px;
+    padding: 5px;
+    box-shadow: 4px 4px #a3a3a3;
 }
 
 .status-temperatura, .status-luminosidade, .status-umidade{
@@ -44,8 +46,8 @@
 }
 .content-valores p{
     font-size: 25px;
-    margin: 10px
+    margin: 5px
 }
 .content-valores h4{
-    margin: 10px
+    margin: 5px
 }

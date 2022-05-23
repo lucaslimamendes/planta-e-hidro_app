@@ -30,23 +30,23 @@ const SideBar = () => {
 
                 <div className="content-buttons">
                     <div className="Home">
-                        <a href="javascript:void(0)"> <Icon path={mdiViewDashboard} /> Home</a>
+                        <a href="/"> <Icon path={mdiViewDashboard} /> Home</a>
                     </div>
 
                     <div className="Plantacao">
-                        <a href="javascript:void(0)"> <Icon path={mdiSprout} /> Plantação</a>
+                        <a href="/plantation"> <Icon path={mdiSprout} /> Plantação</a>
                     </div>
 
                     <div className="Estoque">
-                        <a href="javascript:void(0)"> <Icon path={mdiChartBar} /> Estoque</a>
+                        <a href="/stock"> <Icon path={mdiChartBar} /> Estoque</a>
                     </div>
 
                     <div className="Sensor">
-                        <a href="javascript:void(0)"><Icon path={mdiLightningBolt} /> Sensores</a>
+                        <a href="/sensor"><Icon path={mdiLightningBolt} /> Sensores</a>
                     </div>
 
                     <div className="Consultoria">
-                        <a href="javascript:void(0)"> <Icon path={mdiBriefcase} /> Consultoria</a>
+                        <a href="/consultancy"> <Icon path={mdiBriefcase} /> Consultoria</a>
                     </div>
                 </div>
 
