@@ -14,6 +14,7 @@
     "test-integration": "start-server-and-test start-ci http://localhost:3000 ci",
     "eject": "react-scripts eject"
   },
+  "homepage": ".",
   "jest": {
     "testMatch": [
       "**/tests/unit/**/**.test.js"
